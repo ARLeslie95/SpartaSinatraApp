@@ -1,0 +1,8 @@
+<h1><%= @movie[:title] %></h1>
+<p>Directed by <%= @movie[:director] %></p>
+<a href="/<%=@movie[:id]%>/edit">Edit</a>
+<form action="/<%= @movie[:id] %>" method="post">
+  <input type="submit" name="" value="Delete">
+  <input type="hidden" name="_method" value="DELETE">
+
+</form>

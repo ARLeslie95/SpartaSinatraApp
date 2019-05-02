@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+    <h1>Welcome to the Movie Databse</h1>
+    <% @movies.each do |movie| %>
+      <div>
+        <h3>
+          <a href="/<%=movie[:id]%>"><%= movie[:title] %></a>
+          <p>Directed by <%= movie[:director] %></p>
+        </h3>
+      </div>
+    <% end %>
